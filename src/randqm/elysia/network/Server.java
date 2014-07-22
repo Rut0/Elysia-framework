@@ -1,5 +1,6 @@
 package randqm.elysia.network;
 
+import randqm.elysia.game.entities.mobiles.players.PlayerWorld;
 import randqm.elysia.network.codec.RS2ConnectionRequestProtocolDecoder;
 import randqm.elysia.network.codec.RS2ProtocolEncoder;
 import randqm.logging.LogTypes;
@@ -33,6 +34,11 @@ public class Server {
 	 * The server's task manager.
 	 */
 	private static TaskManager taskManager = TaskFactory.create(new TaskManager(7));
+	
+	/**
+	 * The player world.
+	 */
+	private static PlayerWorld playerWorld = new PlayerWorld();
 	
 	/**
 	 * The boss even loop group.
