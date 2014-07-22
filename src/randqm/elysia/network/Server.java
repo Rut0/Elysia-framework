@@ -79,18 +79,20 @@ public class Server {
 			channel.closeFuture();
 			future.sync();
 			Logger.print(LogTypes.INFO, "Server bound to port " + port);
-			online = true;
-			return true;
 		} catch (InterruptedException e) {
 			Logger.print(LogTypes.ERROR, e.getMessage());
 			return false;
 		}
+		taskManager.submitTask(playerWorld);
+		online = true;
+		return true;
 	}
 	
 	/**
 	 * Shuts the server down.
 	 */
 	public static void shutdown() { //TODO: Disconnect active channels.
+		playerWorld.dispose();
 		workerGroup.shutdownGracefully();
 		bossGroup.shutdownGracefully();
 		taskManager.dispose();
