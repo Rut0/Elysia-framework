@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/RandQm/Desktop/Another Elysia/libraries/netty-all-5.0.0.Alpha.jar"/>
+	<classpathentry kind="lib" path="libraries/Elysia Resources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RandQm/Desktop/Elysia Framework/libraries/RQ Attributing 1.2 with source.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RandQm/Desktop/Elysia Framework/libraries/RQ Logger 1.1 with source.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RandQm/Desktop/Elysia Framework/libraries/RQ Task System 1.6 with source.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
